@@ -1,2 +1,3 @@
-FROM klaemo/couchdb:latest
-COPY couchdb-lucene.ini /usr/local/etc/couchdb/local.d/couchdb-lucene.ini
+FROM andrewrothstein/docker-ansible-onbuild:ubuntu_trusty
+EXPOSE 5984
+CMD /usr/local/bin/couchdb

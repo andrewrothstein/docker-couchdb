@@ -33,8 +33,8 @@
 #GET /emails/71983178-4bab-11e5-a3c6-8f2f2e982bdf
 #GET _fti/local/emails/_design/textindex/by_author?q=Bob
 
-COUCHDB_HOST=127.0.0.1
-COUCHDB_PORT=5984
+COUCHDB_HOST=${COUCHDB_HOST:127.0.0.1}
+COUCHDB_PORT=${COUCHDB_PORT:5984}
 COUCHDB_URL=http://${COUCHDB_HOST}:${COUCHDB_PORT}
 
 # create the emails database
