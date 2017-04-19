@@ -1,6 +1,6 @@
 ---
 - hosts: localhost
   roles:
-    - role: 'andrewrothstein.couchdb'
+    - role: andrewrothstein.couchdb
       couchdb_conf_bind_address : '0.0.0.0'
 
